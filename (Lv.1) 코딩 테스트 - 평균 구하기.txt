@@ -1,0 +1,10 @@
+def solution(arr):
+    answer = 0
+    y = 0
+    
+    for i in range(len(arr)):
+        answer += arr[i]
+        y += 1
+        
+    answer /= y
+    return answer

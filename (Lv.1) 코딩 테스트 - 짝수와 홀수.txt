@@ -1,0 +1,10 @@
+class Solution {
+    public int solution(int num1, int num2) {
+        int sum= -1;
+        int num3 = 50000;
+        if( -num3 <= num1 && num3 >= num1 && -num3 <= num2 && num3 >= num2){
+                sum = num1 + num2;
+        }
+        return sum; 
+    }
+}
