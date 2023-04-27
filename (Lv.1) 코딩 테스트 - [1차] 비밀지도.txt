@@ -1,0 +1,19 @@
+def solution(n, arr1, arr2):
+    answer = []
+    for i in range(n):
+        # 두 배열의 요소를 이진수로 변환합니다.
+        binary1 = format(arr1[i], 'b').zfill(n)
+        binary2 = format(arr2[i], 'b').zfill(n)
+
+        # 두 이진수를 OR 연산을 수행하여 하나의 문자열로 만듭니다.
+        combined = ""
+        for j in range(n):
+            if binary1[j] == "1" or binary2[j] == "1":
+                combined += "#"
+            else:
+                combined += " "
+
+        # OR 연산 결과를 answer 리스트에 추가합니다.
+        answer.append(combined)
+
+    return answer
